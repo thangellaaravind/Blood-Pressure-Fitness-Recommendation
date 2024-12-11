@@ -8,7 +8,7 @@ from sklearn.preprocessing import StandardScaler
 import random
 import os
 
-file_path = os.path.join("C:/Users/Aravind/Downloads/SIHHACK/bp", "scaler_metadata.pkl")streamli
+file_path = os.path.join("C:/Users/Aravind/Downloads/SIHHACK/bp", "scaler_metadata.pkl")
 # Load the scaler and model metadata
 metadata = joblib.load('C:/Users/Aravind/Downloads/SIHHACK/bp/scaler_metadata.pkl')
 scaler = metadata['scaler']
