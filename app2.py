@@ -6,7 +6,9 @@ import numpy as np
 import shap
 from sklearn.preprocessing import StandardScaler
 import random
+import os
 
+file_path = os.path.join("C:/Users/Aravind/Downloads/SIHHACK/bp", "scaler_metadata.pkl")streamli
 # Load the scaler and model metadata
 metadata = joblib.load('C:/Users/Aravind/Downloads/SIHHACK/bp/scaler_metadata.pkl')
 scaler = metadata['scaler']
@@ -308,9 +310,6 @@ with col3:
             </ul>
         </div>
     """, unsafe_allow_html=True)
-
-
-
 
 model = joblib.load('C:/Users/Aravind/Downloads/SIHHACK/bp/recommendation_model.pkl')
 recommendation_data = joblib.load('C:/Users/Aravind/Downloads/SIHHACK/bp/recommendation_data.pkl')
